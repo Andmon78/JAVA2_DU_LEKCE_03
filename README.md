@@ -6,6 +6,8 @@
 4. Napište program, který vezme 2 čísla (a,b) a spočítá druhou mocninu všech čísel mezi a a b včetně <a,b>.
 
 Problémy:
+
 @1  nevím, co je špatně, ale píše mi to vždycky o jednu víc, než by mělo
+
 @3  kvůli desetinné čárce v lokálním nastavení jsem musela změnit desetinnou tečku u des.čísel v původním souboru na čárku
     zaokrouhlení na 2 desetinná místa je krkolomné
