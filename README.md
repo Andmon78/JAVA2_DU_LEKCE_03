@@ -8,8 +8,10 @@
 Problémy:
 
 @1  nevím, co je špatně, ale píše mi to vždycky o jednu víc, než by mělo
+
 -- výsledek hledání je Optional ->  potreba nahradit .toString()  za .get()
 
 @3  kvůli desetinné čárce v lokálním nastavení jsem musela změnit desetinnou tečku u des.čísel v původním souboru na čárku
     zaokrouhlení na 2 desetinná místa je krkolomné
+    
 -- zapsat System.out.printf("%.2f", výsledek bez použití Math.round);
