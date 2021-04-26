@@ -17,7 +17,7 @@ public class Main {
          System.out.println("---------------------------------------");
          readFiles2("priklad3_1.txt","priklad3_2.txt");
          System.out.println("---------------------------------------");
-         powers(1,5);
+         powers(4,12);
 
     }
 
@@ -28,9 +28,8 @@ public class Main {
 
         //1.1  - Najde nejdelší řetězec
         //vypis:   stringStream.max(Comparator.comparing(String::length)).ifPresent(System.out::println);
-        String longestString = stringStream.max(Comparator.comparing(String::length)).toString();
+        String longestString = stringStream.max(Comparator.comparing(String::length)).get();
         //1.2  - V nejdelším řetězci spočítá počet kapitálek
-        // ??? není mi jasné, proč je číslo vždycky o jedna vyšší. Je něco špatně???
         System.out.println("Počet kapitálek v nejdelším řetězci: " + longestString.chars().filter((s)->Character.isUpperCase(s)).count());
     }
 
@@ -77,7 +76,7 @@ public class Main {
         }
         // zpracovani cisel - vypocet prumeru na 2 desetinná místa
         System.out.println("Pole načtených čísel: " + arrayOfNumbers);
-        System.out.println("Průměr: "+ Math.round(arrayOfNumbers.stream().mapToDouble(num -> num).average().getAsDouble()*100)/100.00);
+        System.out.printf("Průměr: %.2f\n", arrayOfNumbers.stream().mapToDouble(num -> num).average().getAsDouble());
         // zaokrouhlování je krkolomné, ale nic jiného mi nešlo
     }
 
